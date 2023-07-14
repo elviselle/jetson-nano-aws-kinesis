@@ -1,0 +1,1 @@
+gst-launch-1.0 -v rtspsrc location="rtsp://127.0.0.1:8554/test" short-header=TRUE ! rtph264depay ! h264parse ! kvssink stream-name="jetson_nano" storage-size=128 access-key="AKIAZDBB2GLJLF4VGP4J" secret-key="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" aws-region="ap-northeast-1"
